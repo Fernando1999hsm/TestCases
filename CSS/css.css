@@ -26,15 +26,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.AgregaTestCases{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem 1rem 2rem;
-}
-.AgregaTestCases h2{
-    color: aquamarine;
-    padding-right: 2rem;
-}
-.modal-body{
-    padding-left: 20px;
+.MuestraTestCases{
+    width: 50%;
+    
 }
