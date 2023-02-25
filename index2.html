@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Cases</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./CSS/css.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">Welcome</h1>
+        </div>
+    </nav>
+
+    <div class="contenedor">
+        <div class="AgregaTestCases">
+            <h2></h2>
+        </div>
+        <div class="MuestraTestCases">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Story 1-A Search Bar (A-Find articles)
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Pre-Condition</strong><br>
+                            Any pre-condition<br>
+                            <strong>Steps :</strong><br>
+                            1.- Access to https://www.liverpool.com.mx/tienda/home <br>
+                            2.- Wait until the page display entirely <br>
+                            3.- Look for the search bar (it should display on the top of the page) <br>
+                            4.- Enter any product or category name <br>
+                            <strong>Expected Result: </strong><br>
+                            The page should display 56(or less, displayed on groups of 4 columns and 14 rows) product related to the query had made<br>
+                            <strong>Test Data: </strong><br>
+                            <i class="bi bi-circle-fill"></i> Consoles  <i class="bi bi-circle-fill"></i> Toys <i class="bi bi-circle-fill"></i> Home
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Story 1-B. Search Bar (B-Be notified)
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Pre-Condition</strong><br>
+                            Any pre-condition<br>
+                            <strong>Steps :</strong><br>
+                            1.- Access to https://www.liverpool.com.mx/tienda/home <br>
+                            2.- Wait until the page display entirely <br>
+                            3.- Look for the search bar (it should display on the top of the page) <br>
+                            4.- Enter any word that doesn’t return any result<br>
+                            <strong>Expected Result: </strong><br>
+                            The page should display a message about does’t find any related to the search<br>
+                            <strong>Test Data: </strong><br>
+                            <i class="bi bi-circle-fill"></i> Chucapsor  <i class="bi bi-circle-fill"></i> Lenduadi 
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Story 1-C. Search Bar (C-Search by elements)
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Pre-Condition</strong><br>
+                            Any pre-condition<br>
+                            <strong>Steps :</strong><br>
+                            1.- Access to https://www.liverpool.com.mx/tienda/home <br>
+                            2.- Wait until the page display entirely <br>
+                            3.- Look for the search bar (it should display on the top of the page) <br>
+                            4.- Enter any brand, physical characteristic or model<br>
+                            <strong>Expected Result: </strong><br>
+                            The page should display 56(or less, displayed on groups of 4 columns and 14 rows) product related to the query had made<br>
+                            <strong>Test Data: </strong><br>
+                            <i class="bi bi-circle-fill"></i> Xbox  <i class="bi bi-circle-fill"></i> White backpack  <i class="bi bi-circle-fill"></i> Poco x3 pro 
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Story 2. Purchase Flow
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Pre-Condition</strong><br>
+                            Be login in a normal account<br>
+                            <strong>Steps :</strong><br>
+                            1.- Access to https://www.liverpool.com.mx/tienda/home <br>
+                            2.- Wait until the page display entirely <br>
+                            3.- Look for the search bar (it should display on the top of the page)<br>
+                            4.- Enter any detail about a tv<br>
+                            5.- You will redirect to a page with more extended description of the product<br>
+                            6.- Wait until the page display entirely<br>
+                            7.- Check if the details about the tv are right<br>
+                            8.- Click on the button “Buy now”<br>
+                            9.- You will redirect to the checkout<br>
+                            10.- Wait until the page display entirely <br>
+                            11.- page the page ask about the shopping info<br>
+                            12.- Insert the card data and configuration<br>
+                            13.- Click on “finish purchase” button<br>
+                            <strong>Expected Result: </strong><br>
+                            The page should display the finish of the purchase, info about you shop and a code for tracking the product<br>
+                            <strong>Test Data: </strong><br>
+                            <i class="bi bi-circle-fill"></i> Email: fernand@test.com 
+                            <i class="bi bi-circle-fill"></i> Password: Testing123!
+                            <i class="bi bi-circle-fill"></i> Name: Nando Test Test
+                            <i class="bi bi-circle-fill"></i> Birth:15/May/2001
+                            <i class="bi bi-circle-fill"></i> Gender: Male
+                            <i class="bi bi-circle-fill"></i> Number: 7103820912
+                            <i class="bi bi-circle-fill"></i> Card info:    Name-Nando
+                                                                            Number-4323 5656 5656 5656
+                                                                            Expiration date-03/31
+                                                                            Security code-783
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Story 3. Create an account
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Pre-Condition</strong><br>
+                            Any pre-condition<br>
+                            <strong>Steps :</strong><br>
+                            1.- Access to https://www.liverpool.com.mx/tienda/home <br>
+                            2.- Wait until the page display entirely <br>
+                            3.- Look for the “Log in” button (it should display on the top-right of the page)<br>
+                            4.- Click on that button<br>
+                            5.- You will redirect to a log in form<br>
+                            6.- Enter the data <br>
+                            7.- Click on “Create a new account” button<br>
+                            8.- You will redirect to another form<br>
+                            9.- Enter the data <br>
+                            10.- Click on “Create account” button<br>
+                            11.- You will redirect to another form<br>
+                            12.- The form will ask about the phone number, enter the data <br>
+                            13.- Then Verify and click “Continue” button<br>
+                            <strong>Expected Result: </strong><br>
+                            You will redirect to the landing page of Liverpool with a open modal that give a welcome to the page<br>
+                            <strong>Test Data: </strong><br>
+                            <i class="bi bi-circle-fill"></i> Email: fernand@test.com 
+                            <i class="bi bi-circle-fill"></i> Password: Testing123!
+                            <i class="bi bi-circle-fill"></i> Name: Nando Test Test
+                            <i class="bi bi-circle-fill"></i> Birth:15/May/2001
+                            <i class="bi bi-circle-fill"></i> Gender: Male
+                            <i class="bi bi-circle-fill"></i> Number: 7103820912
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- CUSTOM JS -->
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
