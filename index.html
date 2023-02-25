@@ -26,7 +26,7 @@
     <div class="contenedor">
         <div class="AgregaTestCases">
             <h2>Test Cases Registrados</h2>
-            <button class="button is-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
                 <i class="bi bi-file-plus"></i>
                 <span>Agregar TestCase</span>
             </button>
@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <!-- MODAL  -->
+    <!-- MODAL 1 -->
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
         tabindex="-1">
         <div class="modal-dialog modal-xl modal-dialog-centered">
@@ -45,43 +45,58 @@
                     <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Agregue su caso de prueba</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" id="modal-body">
                     <div class="mb-3 row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label">Titulo</label>
+                        <label for="inputText" class="col-sm-2 col-form-label">Titulo</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" name="Titulo" id="Titulo">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Descripcion</label>
+                        <label for="inputText" class="col-sm-2 col-form-label">Descripcion</label>
                         <div class="col-sm-10">
                             <input type="password" class="form-control" name="Descripcion" id="Descripcion">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Pasos</label>
-                        
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Resultados Esperados</label>
+                        <label for="inputText" class="col-sm-2 col-form-label">Condiciones previas</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <input type="text" class="form-control" name="Condicion" id="Condicion">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Resultados Actuales</label>
+                        <label for="inputText" class="col-sm-2 col-form-label">Pasos</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword">
+                            <div id="newPasos"></div>
+                            <button id="addPaso" type="button" class="btn btn-info">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputText" class="col-sm-2 col-form-label">Datos de prueba</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="DatosPrueba" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputText" class="col-sm-2 col-form-label">Resultados Esperados</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="ResultadoEsperado">
+                        </div>
+                    </div>
+                    <div class="mb-3 row" style="display: none;">
+                        <label for="inputText" class="col-sm-2 col-form-label">Resultados Actuales</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="ResultadoObtenido">
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
-                    second modal</button>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" id="btnVistaPrevia">Vista previa del caso de prueba</button>
+                </div>
             </div>
         </div>
     </div>
+    <!-- MODAL 2 -->
     </div>
     <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
         tabindex="-1">
@@ -92,11 +107,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Hide this modal and show the first with the button below.
+                    <div class="modal2Contenido" id="modal2Contenido">
+
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
-                        first</button>
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Agregar caso de prueba</button>
                 </div>
             </div>
         </div>
@@ -113,9 +129,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- CUSTOM JS -->
     <script src="./JS/main.js"></script>
-    <script type="text/javascript">
-        
-        </script>
 </body>
 
 </html>
